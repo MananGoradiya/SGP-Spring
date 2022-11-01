@@ -18,7 +18,7 @@ pipeline {
                 script{
                                       
                     sh 'docker images'
-                    sh 'docker build -t manangoradiya/first-app .'                    
+                    sh 'docker build -t manangoradiya/sgp-spring .'                    
                 }
             }
         }
@@ -30,7 +30,7 @@ pipeline {
     // some block
                         sh 'docker login -u manangoradiya -p ${dockerhubpwd}'
 }
-                    sh 'docker push manangoradiya/first-app'
+                    sh 'docker push manangoradiya/sgp-spring'
                 }
             }
         }
